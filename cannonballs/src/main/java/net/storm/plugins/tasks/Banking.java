@@ -37,13 +37,6 @@ public class Banking implements Task {
             return -1;
         }
 
-
-//        if (!Inventory.isEmpty() && !Inventory.containsAll(Constants.AMMO_MOULD, Constants.STEEL_BAR)) {
-//            log.info("Test test");
-//            Bank.depositAllExcept(Constants.AMMO_MOULD, Constants.STEEL_BAR);
-//            return -1;
-//        }
-
         IBankItem steelbar = Bank.getFirst(i -> i != null && Constants.STEEL_BAR == i.getId() && !i.isPlaceholder());
 
         if (!Inventory.isFull()) {
