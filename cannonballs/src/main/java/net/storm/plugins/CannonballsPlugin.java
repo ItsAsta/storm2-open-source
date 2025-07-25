@@ -98,6 +98,7 @@ public class CannonballsPlugin extends TaskPlugin {
 
     @Subscribe
     private void onConfigChanged(ConfigChanged e) {
+        // This check is done to make sure that our config would only trigger if the config group matches this plugins config group.
         if (!e.getGroup().equals(CannonballsConfig.GROUP)) {
             return;
         }
@@ -111,7 +112,7 @@ public class CannonballsPlugin extends TaskPlugin {
 
     @Subscribe
     private void onExperienceGained(ExperienceGained e) {
-        // If the gained XP is not Smithing then we should do an early return to avoid the code continuing
+        // If the gained XP is not from Smithing then we should do an early return to avoid the code continuing
         if (e.getSkill() != Skill.SMITHING) {
             return;
         }
