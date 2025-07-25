@@ -15,9 +15,9 @@ subprojects {
     apply<JavaPlugin>()
     apply(plugin = "java-library")
 
-    group = "net.storm2.plugins"
+    group = "asta.storm2.open.source"
 
-    project.extra["PluginProvider"] = "Storm 2"
+    project.extra["PluginProvider"] = "Asta"
     project.extra["ProjectSupportUrl"] = "https://discord.gg/storm"
     project.extra["PluginLicense"] = "3-Clause BSD License"
 

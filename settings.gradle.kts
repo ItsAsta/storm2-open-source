@@ -1,10 +1,9 @@
-rootProject.name = "storm2-example-plugin"
+rootProject.name = "asta-storm2-open-source"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(
-    "example-looped-plugin",
-    "example-task-plugin",
+    "cannonballs"
 )
 
 for (project in rootProject.children) {
